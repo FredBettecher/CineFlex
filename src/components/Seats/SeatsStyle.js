@@ -20,10 +20,10 @@ export const SeatsStyle = styled.div`
     }
 
     h1 {
-            font-size: 1.5rem;
-            color: #293845;
-            margin: 2.5rem 0;
-            cursor: default;
+        font-size: 1.5rem;
+        color: #293845;
+        margin: 2.5rem 0 0.8rem 0;
+        cursor: default;
     }
 
     h2 {
@@ -36,6 +36,7 @@ export const SeatsStyle = styled.div`
     p {
         color: #4E5A65;
         font-size: 0.8125rem;
+        cursor: default;
     }
 
     img {
@@ -53,9 +54,9 @@ export const SeatsStyle = styled.div`
     .seats {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        width: 18.57rem;
-        height: 20rem;
+        align-items: center;
+        justify-content: space-between;
+        width: 22rem;
     }
 
     .seat {
@@ -66,6 +67,50 @@ export const SeatsStyle = styled.div`
         border: 1px solid #808F9D;
         border-radius: 50%;
         display: inline-block;
-        padding-top: 0.3rem;
+        padding-top: 0.4rem;
+        margin: 1rem 0.5rem 0 0;
+        color: #000000;
+        font-size: 0.69rem;
+        cursor: pointer;
+    }
+
+    .seat-status {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    .seat-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selected-circle {
+        height: 1.625rem;
+        width: 1.625rem;
+        background-color: #1AAE9E;
+        border: 1px solid #0E7D71;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .available-circle {
+        height: 1.625rem;
+        width: 1.625rem;
+        background-color: #C3CFD9;
+        border: 1px solid #7B8B99;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .unavailable-circle {
+        height: 1.625rem;
+        width: 1.625rem;
+        background-color: #FBE192;
+        border: 1px solid #F7C52B;
+        border-radius: 50%;
+        display: inline-block;
     }
 `;

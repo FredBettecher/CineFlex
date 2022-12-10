@@ -21,9 +21,9 @@ export default function Seats({sessionSeats, setSeats}) {
                     ))}
                 </div>
                 <div className="seat-status">
-                    <div className="selected"><span className="selected-circle"><p>Selecionado</p></span></div>
-                    <div className="available"><span className="available-circle"><p>Disponível</p></span></div>
-                    <div className="unavailable"><span className="disponible-circle"><p>Disponível</p></span></div>
+                    <div className="seat-box"><div className="selected-circle"></div><p>Selecionado</p></div>
+                    <div className="seat-box"><div className="available-circle"></div><p>Disponível</p></div>
+                    <div className="seat-box"><div className="unavailable-circle"></div><p>Disponível</p></div>
                 </div>
             </div>
 
