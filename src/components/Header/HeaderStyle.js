@@ -8,10 +8,8 @@ export const HeaderStyle = styled.header`
     background-color: #C3CFD9;
     width: 100%;
     height: 4.2rem;
-
-    a {
-        text-decoration: none;
-        color: #E8833A;
-        font-weight: bold;
-    }
+    text-decoration: none;
+    color: #E8833A;
+    font-weight: bold;
+    cursor: default;
 `;

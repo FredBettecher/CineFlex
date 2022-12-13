@@ -33,6 +33,13 @@ export const SeatsStyle = styled.div`
         cursor: default;
     }
 
+    h3 {
+        font-size: 1.125rem;
+        color: #293845;
+        cursor: default;
+        margin-bottom: 0.2rem;
+    }
+
     p {
         color: #4E5A65;
         font-size: 0.8125rem;
@@ -44,6 +51,40 @@ export const SeatsStyle = styled.div`
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 2px;
         width: 4rem;
+    }
+
+    input {
+        width: 20.44rem;
+        height: 3.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.125rem;
+        border: 1px solid #D4D4D4;
+        border-radius: 3px;
+        padding-left: 1.125rem;
+        display: block;
+
+        ::placeholder{
+            color: #AFAFAF;
+            font-style: italic;
+            font-family: "Roboto";
+        }
+    }
+
+    button {
+        margin-top: 2rem;
+        margin-bottom: 1.875rem;
+        border: 1px transparent;
+        border-radius: 3px;
+        width: 16rem;
+        height: 3rem;
+        background-color: #E8833A;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.125rem;
     }
 
     .seats-box {
@@ -61,13 +102,7 @@ export const SeatsStyle = styled.div`
 
     .seat {
         text-align: center;
-        height: 1.625rem;
-        width: 1.625rem;
-        background-color: #C3CFD9;
-        border: 1px solid #808F9D;
-        border-radius: 50%;
-        display: inline-block;
-        padding-top: 0.4rem;
+        padding-top: 0.45rem;
         margin: 1rem 0.5rem 0 0;
         color: #000000;
         font-size: 0.69rem;
@@ -80,7 +115,7 @@ export const SeatsStyle = styled.div`
         margin-top: 1rem;
     }
 
-    .seat-box {
+    .seat-status-box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -93,7 +128,6 @@ export const SeatsStyle = styled.div`
         background-color: #1AAE9E;
         border: 1px solid #0E7D71;
         border-radius: 50%;
-        display: inline-block;
     }
 
     .available-circle {
@@ -102,7 +136,6 @@ export const SeatsStyle = styled.div`
         background-color: #C3CFD9;
         border: 1px solid #7B8B99;
         border-radius: 50%;
-        display: inline-block;
     }
 
     .unavailable-circle {
@@ -111,6 +144,16 @@ export const SeatsStyle = styled.div`
         background-color: #FBE192;
         border: 1px solid #F7C52B;
         border-radius: 50%;
-        display: inline-block;
+    }
+
+    .inputs-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.625rem;
+    }
+
+    .centralize {
+        display: flex;
+        justify-content: center;
     }
 `;
