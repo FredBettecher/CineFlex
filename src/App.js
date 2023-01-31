@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Body } from "./AppStyle";
-import Header from "./Header/Header";
-import HomePage from "./HomePage/HomePage";
-import Sessions from "./Sessions/Sessions";
-import Seats from "./Seats/Seats";
-import Success from "./Success/Success";
+import { Body } from "./assets/style/AppStyle";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/Home/HomePage";
+import Sessions from "./pages/Sessions/Sessions";
+import Seats from "./pages/Seats/Seats";
+import Success from "./pages/Success/Success";
 
 function App() {
   const [movies, setMovies] = useState([]);
